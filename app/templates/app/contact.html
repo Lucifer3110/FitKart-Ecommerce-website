@@ -1,0 +1,46 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Mobile{% endblock title %}
+{% block main-content %}
+
+<div class="container center my-2">
+    <h2 class="text-center">
+        Contact FitKart.
+
+    </h2>
+      <div class="text-center" >
+        <h6>
+        fitkart@gmail.com 
+        
+        </h6>
+      </div>
+    <form method="post" action="http://127.0.0.1:8000/contact/">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control"  name="name">
+    </div>
+       
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address </label>
+      <input type="email" class="form-control"  name="email">
+    </div>
+    
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone no.</label>
+      <input type="text" class="form-control"  name="phone">
+    </div>
+
+    <div class="mb-3">
+      <label for="textbox" class="form-label">Enter your query/feedback</label>
+      <textarea class="form-control" id="Textarea1" name="content" placeholder="write your feedback" rows="3"></textarea>
+    </div>    
+
+       <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+</div>
+
+
+{% endblock main-content %}
