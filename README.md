@@ -1,4 +1,4 @@
-##FitKart E-commerce Website
+**FitKart E-commerce Website**
 
 
 FitKart is an immersive e-commerce platform designed for fitness enthusiasts. Developed as a project by a passionate computer engineering student, this web application harnesses the power of Django, ASGI, and an array of technologies to provide a seamless shopping experience.
